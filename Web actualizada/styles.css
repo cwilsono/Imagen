@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 200;
+  font-style: normal;
+}
+
+  
+.anonymous-pro-regular {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+  }
+  
+  .anonymous-pro-bold {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2; /* Color de fondo general */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #fff; /* Cambiado a blanco */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu li a {
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s; /* Agregado para suavizar la transición del color */
+    font-size: 26px;
+}
+
+.menu li a:hover {
+    color: #ff5722; /* Cambiado a color naranja al pasar el mouse */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: black; /* Cambiado a color negro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: -10px; /* Ajusta el margen superior para eliminar el espacio entre la barra de navegación y las secciones */
+    margin-bottom: -20px; /* Añadido para compensar el margen de las secciones con el footer */
+}
+section {
+    background-color: #ddd; /* Fondo de las secciones */
+    border: none;
+    padding: 20px;
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+.titulo-seccion {
+    color: #003366; /* Azul oscuro */
+    font-weight: bold;
+}
+
+/* Estilos de la sección "Inicio" */
+#inicio {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/Inicio%20Inicio.png');
+    height: 1230px;
+    background-repeat: no-repeat;
+}
+
+#inicio .inicio-texto {
+    position: relative; /* Para permitir el posicionamiento exacto */
+    bottom: -750px; /* Ajusta este valor para mover el texto hacia arriba o abajo */
+    left: 42px; /* Ajusta este valor para mover el texto hacia la izquierda o derecha */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 48px;
+    font-family: 'Anonymous Pro', monospace; /* Aplica la fuente Anonymous Pro */
+    font-style: italic; /* Aplica el estilo cursiva */
+
+}
+
+#inicio .inicio-texto p {
+    color: #1E2369; /* Color morado para todo el texto */
+    font-weight: 900;
+}
+
+#inicio .inicio-texto .resaltado {
+    color: #CB6800; /* Color naranja para la palabra "crecer" */
+}
+
+/* Estilos de la sección "Sinopsis" */
+#sinopsis {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/SinopsisSinopsis.png');
+    height: 792px;
+    background-repeat: no-repeat;
+}
+
+#sinopsis .titulo-seccion {
+    font-family: 'Plus Jakarta Sans', sans-serif;;
+    color: #1E2369;
+    font-size: 79px;
+    text-align: left;
+    margin-bottom: 29px;
+    position: relative;
+    bottom: -180px;
+    left: 602px; 
+    max-width: calc(100%-40px);
+}
+
+#sinopsis p {
+    font-family: 'Plus Jakarta Sans', sans-serif;;
+    font-weight: 700;
+    font-size: 1.7em;
+    color: black;
+    margin-top: 20px; 
+    position: relative;
+    bottom: -185px;
+    left: 578px; 
+    padding-right: 630px;
+    text-align: justify;
+   
+    
+}
+
+
+/* Estilos de la sección "Biografía" */
+#biografia {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/BioBio.png');
+    height: 1195px;
+    background-repeat: no-repeat;
+}
+
+#biografia .titulo-seccion {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1E2369;
+    font-size: 79px;
+    text-align: center;
+    margin-bottom: 29px;
+    
+}
+
+#biografia p {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1A202C;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+.autores {
+    display: flex;
+    gap: 14px; /* Ajusta este valor para modificar la separación */
+    margin: 0 73px;
+    margin-top: 420px;
+    color: #1E2369; /* Color azul */
+}
+
+.autor {
+    flex: 1;
+    border: 1px solid transparent;
+    padding: 2px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos internos del contenedor autor se alineen en columna */
+}
+
+
+.nombre-autor {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+}
+
+.autor p {
+    font-size: 16px; /* Tamaño de fuente para el texto */
+    color: #1A202C; /* Color del texto */
+    line-height: 1.8; /* Altura de línea para mejorar la legibilidad */
+    margin: 8px 0; /* Margen para separar los párrafos */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Fuente para los párrafos */
+    text-align: justify; /* Justifica el texto */
+} 
+
+
+
+/* Estilos de la sección "Tráiler" */
+#trailer {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/TrailerTrailer.png');
+    height: 981px;
+    background-repeat: no-repeat;
+}
+
+#trailer .titulo-seccion {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1E2369;
+    font-size: 79px;
+    text-align: center;
+    margin-bottom: 29px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif; /* Aplica la tipografía Plus Jakarta Sans */
+
+}
+
+.video-container iframe {
+    display: block;
+    margin: 61px auto 0 auto;
+    width: 880px;
+    height: 580px;
+}
+
+/* Estilos de la sección "Galería" */
+#galeria {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/GaleriaGaleria.png');
+    height: 2537px;
+    background-repeat: no-repeat;
+}
+
+#galeria .titulo-seccion {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1E2369;
+    font-size: 79px;
+    text-align: center;
+    margin-bottom: 29px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 40px
+    
+}
+
+/* Estilos de la sección "Crítica" */
+#critica {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/CriticasCriticas.png');
+    height: 1523px;
+    background-repeat: no-repeat;
+}
+
+#critica .titulo-seccion {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #1E2369;
+    font-size: 79px;
+    text-align: center;
+    margin-bottom: 29px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 40px
+    
+}
+
+.criticas-container {
+    display: flex; /* Para que los divs estén en la misma línea */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+}
+
+.critica {
+    width: calc(25.33% - 6px); /* Ancho del 33.33% con 20px de margen en ambos lados */
+    margin: -8px 45px; /* Margen lateral de 10px */
+    height: 340px; /* Altura deseada */
+    border: 1px solid transparent; /* Borde para visualizar cada div */
+    box-sizing: border-box; /* Incluye el borde en el ancho y altura */
+}
+
+.critica p {
+    font-weight: bold; /* Estilo negrito */
+    color: white; /* Color de texto blanco */
+    margin: 14.2px; /* Margen de 32px en todos los lados */
+    font-size: 23px;
+}
+
+.critica .otro-texto,
+.critica .otro-texto2,
+.critica .otro-texto3 {
+    margin: 18px 20px 10px; /* Margen superior de 15px, margen inferior de 10px y margen lateral de 32px */
+    color: #333; /* Color de texto */
+    color: white; /* Color de texto blanco */
+    font-size: 19px;
+}
+
+.nombre-premio{
+    text-align: center; /* Para centrar el texto */
+    margin-top: 44px; /* Modifica el margen superior según sea necesario */
+    color: #1E2369;
+    font-size: 79px;
+}
+
+
+.premiosganados-container {
+    display: flex; /* Para que los divs estén en la misma línea */
+    justify-content: center; /* Para centrar los elementos horizontalmente */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.puntospremio {
+    width: calc(25.33% - 1px); /* Ancho del 33.33% con 20px de margen en ambos lados */
+    margin: -38px 36px; /* Margen lateral de 10px */
+    margin-top: 450px;
+    height: 200px; /* Altura deseada */
+    border: 1px solid transparent; /* Borde para visualizar cada div */
+    box-sizing: border-box; /* Incluye el borde en el ancho y altura */
+}
+
+.puntospremio p {
+    font-weight: bold; /* Estilo negrito */
+    color: white; /* Color de texto blanco */
+    margin: 8.2px; /* Margen de 32px en todos los lados */
+    font-size: 17px;
+}
+
+
+
+
+/* Estilos del footer */
+footer {
+    background-image: url('https://raw.githubusercontent.com/cwilsono/Imagen/main/Footer.png');
+    height: 352px;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -20px; /* Agrega un margen superior negativo para compensar el margen de las secciones */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-left {
+    text-align: left;
+    width: 33%;
+}
+
+.footer-center {
+    text-align: center;
+    width: 33%;
+    color: black;
+    line-height: 2.2;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-right {
+    text-align: right;
+    width: 33%;
+    margin-top: 200px;
+}
+
+.social-icon {
+    margin: 0 5px;
+    
+}
+
+.copyright {
+    color: #1A202C;
+}
+
+
+
+@media (max-width: 768px) {
+    footer {
+        text-align: left;
+      
+    }
+    
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
